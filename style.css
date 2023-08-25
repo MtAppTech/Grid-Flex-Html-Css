@@ -21,30 +21,33 @@ header{
     flex-wrap: wrap;
 }
 p {
-    font-size: 3rem;
+    /* font-size: 1rem; */
     font-weight: bold;
     bottom: 1rem;
+    
 }
 menu{
     flex: 1;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;  /*horizontal alignment*/
-    font-size: 2rem;  
+    font-size: 1rem;  
 }
 .my-menu{
     
     display: flex;
+    justify-content: center;
+    text-align: center;
     gap: 1rem;
     flex-wrap: wrap;  /*goes down after it's over*/
     flex-direction: column;  
 }
 
 .my-menu p {
-    font-size: 4rem;  
+    font-size: 1rem;     
 }
 select{
-    font-size: 1.8rem;
+    font-size: 1rem;
     background-color: lightsteelblue;
     font-style: italic;
     border-radius: 3px;
@@ -57,7 +60,8 @@ ul{
 }
 
 input{
-    font-size: 2rem;
+    font-size: 1rem;
+    
     background-color: lightsteelblue;
     border-radius: 3px;
     box-shadow: 3px 3px 6px black;
@@ -79,8 +83,8 @@ main{
     /* grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(6,1fr); */
 
-    grid-template-rows: repeat(5,15rem);;
-    grid-template-columns: repeat(6,15rem); 
+    grid-template-rows: repeat(5,10rem);
+    grid-template-columns: repeat(6,10rem); 
 
     grid-template-areas:
     'a01 a01 a02 a02 a03 a03'
@@ -104,15 +108,22 @@ main{
 }
 .box{
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: end;
     text-align: left;  
     background-size: cover;
     background-repeat: no-repeat;
    
 }
-h2{
-    font-style: italic;   
+
+.title{
+    font-style: italic;  
+    font-size: 1.2rem; 
+}
+.sub-title{
+    font-style: italic;
+    font-size: 0.9rem;   
+   
 }
 h3{
     font-weight: bold;   
